@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>Vite</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (Bootstrap's JavaScript plugins) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Best exclusive events around me." />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="assets/move-top.js"></script>
+		<script type="text/javascript" src="assets/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body class="cbp-spmenu-push">
+<div id="home" class="banner">
+	 <div class="container">
+		 <div class="header">
+			 <div class="logo">
+				 <a href="#"><img src="assets/Vite-UI-1.png" alt="" /></a>
+			 </div>	
+			 <div class="top-nav">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+					<h3>Menu</h3>
+					<a class="scroll" href="#home" class="active">Home</a>
+					<a class="scroll" href="#feature">Features</a>
+					<a class="scroll" href="#screenshots">Screen Shots</a>
+					<a class="scroll" href="#team">Team</a>
+				</nav>
+				<div class="main buttonset">	
+						<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush"><img src="assets/menu-icon.png" alt=""/></button>
+						<!--<span class="menu"></span>-->
+				</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+				<script src="js/classie.js"></script>
+				<script>
+				var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+				showRightPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toleft' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRightPush' );
+				};
+
+				function disableOther( button ) {
+					if( button !== 'showRightPush' ) {
+						classie.toggle( showRightPush, 'disabled' );
+					}
+				}
+			 </script>
+	     </div>
+			<div class="clearfix"></div>
+		 </div>
+		 
+		 <div class="banner-info">
+			 <h1>Get it right<span>get a vite</span></h1>
+			 <p>Vite is the ultimate exclusive experience for local events. see what's going on nearby and check out all of the events happening around you.</p>
+			 <a href="#"><img src="assets/app.png" alt=""/></a>
+		 </div>
+		 <div class="down">
+		 <a class="scroll" href="#feature"><img src="assets/scroll.png" alt=""/></a>
+		 </div>
+	 </div>
+	 <div class="hand">
+		 <img src="assets/hand.png" alt=""/>
+	 </div>
+</div>
+<!--features-->
+<div id="feature" class="features">
+	 <div class="container">
+		 <div class="feature-info text-center">
+		 <h3>APP FEATURES</h3>
+		 <p>What is Vite? short for in"vite" or invitation. You must get a vite to get approved for the address of the event and guaranteed entry.</p>
+		 </div>
+		 <div class="feature-grids">
+			 <div class="col-md-6 feature-sec">
+				 <div class="feature-grid grid1">
+					 <h3>Create Event</h3>
+					 <p>Anyone is welcome to create an event on vite, whether you are promoting an exclusive event or you are creating fun around your area.</p>
+				 </div>
+				 <div class="feature-grid grid2">
+					 <h3>Vites</h3>
+					 <p>On swipe right of the event you will request the event promoter for acceptance, once approved you will receive a vite. This allows you to message the owner, gain access to the address and a map with directions, and any other information about the event.</p>
+				 </div>
+			 </div>
+			 <div class="col-md-6 feature-sec">
+				 <div class="feature-grid grid3">
+					 <h3>VIP's</h3>
+					 <p>The My VIP's feature will allow you to have a selected list of your closest friends that will automatically be notified and accepted to your new events.</p>
+				 </div>
+				 <!-- <div class="feature-grid grid4">
+					 <h3>Colors Customization</h3>
+					 <p>Lorem ipsum dolor sit amet consectetur adictum 
+						piscing elit fusce sit amet inerdum neque ultra 
+						icies scelerisque non tempor neque dolor set 
+						egestas at.</p>
+				 </div> -->
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	</div>
+</div>
+
+<!--screenshots-->
+<div id="screenshots" class="screen-shots">
+	 <div class="container">
+		 <h3>SCREEN SHOTS</h3>
+		  <div class="review-slider">
+			 <ul id="flexiselDemo1">
+				<li><img src="assets/ss1" alt=""/></li>
+				<li><img src="assets/ss2" alt=""/></li>
+				<li><img src="assets/ss3" alt=""/></li>
+				<li><img src="assets/ss4" alt=""/></li>
+				<li><img src="assets/ss5" alt=""/></li>
+				<li><img src="assets/ss6" alt=""/></li>
+				<li><img src="assets/ss7" alt=""/></li>
+				<li><img src="assets/ss8" alt=""/></li>
+				<li><img src="assets/ss9" alt=""/></li>
+				<li><img src="assets/ss10" alt=""/></li>
+				<li><img src="assets/ss11" alt=""/></li>
+				<li><img src="assets/ss12" alt=""/></li>			
+			 </ul>
+				<script type="text/javascript">
+			 $(window).load(function() {
+				
+			  $("#flexiselDemo1").flexisel({
+					visibleItems: 4,
+					animationSpeed: 1000,
+					autoPlay: true,
+					autoPlaySpeed: 3000,    		
+					pauseOnHover: true,
+					enableResponsiveBreakpoints: true,
+					responsiveBreakpoints: { 
+						portrait: { 
+							changePoint:480,
+							visibleItems: 2
+						}, 
+						landscape: { 
+							changePoint:640,
+							visibleItems: 3
+						},
+						tablet: { 
+							changePoint:768,
+							visibleItems: 4
+						}
+					}
+				});
+				});
+			 </script>
+			 <script type="text/javascript" src="assets/jquery.flexisel.js"></script>	
+		  </div>
+	  </div>
+</div>
+<!--team-->
+<div id="team" class="team">
+	<div class="container">
+		 <h3>TEAM</h3>
+		 <div class="team-grids">
+			 <div class="col-md-4 team-grid text-center">
+				 <img src="assets/t1.jpg" alt=""/>
+				 <h4>Phillip Buchanon</h4>
+				 <p>Former NFL background, Entreprenuer working on novels, comic books, children books, board games, and mobile apps.</p>
+				 <div class="social-icons">
+					 <a href="#"><span class="fb"></span></a>
+					 <a href="#"><span class="tweet"></span></a>
+					 <a href="#"><span class="drib"></span></a>
+				 </div>
+			 </div>
+			 <div class="col-md-4 team-grid text-center">
+				 <img src="assets/t2.jpg" alt=""/>
+				 <h4>Sebastian Misas</h4>
+				 <p>Full stack web development background and current IOS developer.</p>
+				 <div class="social-icons">
+					 <a href="#"><span class="fb"></span></a>
+					 <a href="#"><span class="tweet"></span></a>
+					 <a href="#"><span class="drib"></span></a>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!--team-->
+<div class="Contact">
+	 <div class="container">
+		 <h3>Contact us</h3>
+		 <span >Phone: 222-222-222</span><br>
+		 <span>Email: support@vites.com</span>
+	 </div>
+</div>
+<!--footer-->
+<div class="footer">
+	 <div class="container">
+		 <p>Copyright © 2016 Vite. All rights reserved </a></p>
+	 </div>
+</div>
+
+</body>
+</html>
