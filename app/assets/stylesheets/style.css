@@ -54,7 +54,7 @@ button#showRightPush {
   outline: none;
   position: fixed;
   z-index: 1;
-  background: #1ce4ef;;
+  background: #6D2B6B;
 }
 nav#cbp-spmenu-s2 {
   background: #fff;
@@ -239,12 +239,13 @@ nav#cbp-spmenu-s2 h3 {
 	cursor: pointer;
 	position: relative;
 	line-height: 0px;
+  
 }
 .nbs-flexisel-item > img {	
 	cursor: pointer;
 	position: relative;
-	  width: 80%;
   margin: 0 5%;
+  height: 250px;
 }
 /*--team--*/
 .team{
@@ -315,6 +316,7 @@ nav#cbp-spmenu-s2 h3 {
 }
 /*--Contact--*/
 .Contact{
+  text-align: center;
 	background:#1d1130;
 	padding:4em 0 5.5em 0;
 }
@@ -765,5 +767,8 @@ button#showRightPush {
 .footer p {
   font-size: 0.8em;
   text-align:center;
+}
+#flexiselDemo1 li {
+  height: 250px;
 }
 }

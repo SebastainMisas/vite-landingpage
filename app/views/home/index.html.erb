@@ -31,7 +31,7 @@
 	 <div class="container">
 		 <div class="header">
 			 <div class="logo">
-				 <a href="#"><img src="assets/Vite-UI-1.png" alt="" /></a>
+				 <a href="#"><%= image_tag "Vite-UI-1.png" %></a>
 			 </div>	
 			 <div class="top-nav">
 				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
@@ -43,7 +43,7 @@
 				</nav>
 				<div class="main buttonset">	
 						<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-						<button id="showRightPush"><img src="assets/menu-icon.png" alt=""/></button>
+						<button id="showRightPush"><%= image_tag "menu-icon.png" %></button>
 						<!--<span class="menu"></span>-->
 				</div>
 				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
@@ -76,11 +76,11 @@
 			 <a href="#"><img src="assets/app.png" alt=""/></a>
 		 </div>
 		 <div class="down">
-		 <a class="scroll" href="#feature"><img src="assets/scroll.png" alt=""/></a>
+		 <a class="scroll" href="#feature"><%= image_tag "scroll.png" %></a>
 		 </div>
 	 </div>
 	 <div class="hand">
-		 <img src="assets/hand.png" alt=""/>
+		 <%= image_tag "hand.png" %>
 	 </div>
 </div>
 <!--features-->
@@ -96,15 +96,12 @@
 					 <h3>Create Event</h3>
 					 <p>Anyone is welcome to create an event on vite, whether you are promoting an exclusive event or you are creating fun around your area.</p>
 				 </div>
-				 <div class="feature-grid grid2">
-					 <h3>Vites</h3>
-					 <p>On swipe right of the event you will request the event promoter for acceptance, once approved you will receive a vite. This allows you to message the owner, gain access to the address and a map with directions, and any other information about the event.</p>
-				 </div>
+				 
 			 </div>
 			 <div class="col-md-6 feature-sec">
 				 <div class="feature-grid grid3">
-					 <h3>VIP's</h3>
-					 <p>The My VIP's feature will allow you to have a selected list of your closest friends that will automatically be notified and accepted to your new events.</p>
+					 <h3>Vites</h3>
+					 <p>On swipe right of the event you will request the event promoter for acceptance, once approved you will receive a vite. This allows you to message the owner, gain access to the address and a map with directions, and any other information about the event.</p>
 				 </div>
 				 <!-- <div class="feature-grid grid4">
 					 <h3>Colors Customization</h3>
@@ -125,18 +122,18 @@
 		 <h3>SCREEN SHOTS</h3>
 		  <div class="review-slider">
 			 <ul id="flexiselDemo1">
-				<li><img src="assets/ss1" alt=""/></li>
-				<li><img src="assets/ss2" alt=""/></li>
-				<li><img src="assets/ss3" alt=""/></li>
-				<li><img src="assets/ss4" alt=""/></li>
-				<li><img src="assets/ss5" alt=""/></li>
-				<li><img src="assets/ss6" alt=""/></li>
-				<li><img src="assets/ss7" alt=""/></li>
-				<li><img src="assets/ss8" alt=""/></li>
-				<li><img src="assets/ss9" alt=""/></li>
-				<li><img src="assets/ss10" alt=""/></li>
-				<li><img src="assets/ss11" alt=""/></li>
-				<li><img src="assets/ss12" alt=""/></li>			
+				<!-- <li><%= image_tag "ss1" %></li> -->
+				<li><%= image_tag "ss2" %></li>
+				<li><%= image_tag "ss3" %></li>
+				<li><%= image_tag "ss4" %></li>
+				<li><%= image_tag "ss5" %></li>
+				<li><%= image_tag "ss6" %></li>
+				<li><%= image_tag "ss7" %></li>
+				<li><%= image_tag "ss8" %></li>
+				<li><%= image_tag "ss9" %></li>
+				<li><%= image_tag "ss10" %></li>
+				<!-- <li><%= image_tag "ss11" %></li> -->
+				<li><%= image_tag "ss12" %></li>			
 			 </ul>
 				<script type="text/javascript">
 			 $(window).load(function() {
@@ -169,36 +166,7 @@
 		  </div>
 	  </div>
 </div>
-<!--team-->
-<div id="team" class="team">
-	<div class="container">
-		 <h3>TEAM</h3>
-		 <div class="team-grids">
-			 <div class="col-md-4 team-grid text-center">
-				 <img src="assets/t1.jpg" alt=""/>
-				 <h4>Phillip Buchanon</h4>
-				 <p>Former NFL background, Entreprenuer working on novels, comic books, children books, board games, and mobile apps.</p>
-				 <div class="social-icons">
-					 <a href="#"><span class="fb"></span></a>
-					 <a href="#"><span class="tweet"></span></a>
-					 <a href="#"><span class="drib"></span></a>
-				 </div>
-			 </div>
-			 <div class="col-md-4 team-grid text-center">
-				 <img src="assets/t2.jpg" alt=""/>
-				 <h4>Sebastian Misas</h4>
-				 <p>Full stack web development background and current IOS developer.</p>
-				 <div class="social-icons">
-					 <a href="#"><span class="fb"></span></a>
-					 <a href="#"><span class="tweet"></span></a>
-					 <a href="#"><span class="drib"></span></a>
-				 </div>
-			 </div>
-			 <div class="clearfix"></div>
-		 </div>
-	 </div>
-</div>
-<!--team-->
+
 <div class="Contact">
 	 <div class="container">
 		 <h3>Contact us</h3>
