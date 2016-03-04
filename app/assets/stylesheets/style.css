@@ -712,8 +712,7 @@ button#showRightPush {
 }
 .feature-grid p {
   width: 100%;
-  overflow: hidden;
-  height: 50px;
+
 }
 .feature-grid h3 {
   font-size: 1.1em;
