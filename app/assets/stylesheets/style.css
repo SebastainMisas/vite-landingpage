@@ -52,7 +52,8 @@ button#showRightPush {
   border: none;  
   padding: 6px;
   outline: none;
-  position: fixed;
+  position: absolute;
+  top: 9%;
   z-index: 1;
   background: #6D2B6B;
 }
@@ -138,6 +139,7 @@ nav#cbp-spmenu-s2 h3 {
 	width:60%;
 	margin:0 auto;
 	line-height:1.3em;
+  text-align: left;
 }
 .feature-grids{
 	margin-top:4em;
@@ -703,8 +705,7 @@ button#showRightPush {
 }
 .feature-info p {
   font-size: 0.85em;
-  overflow: hidden;
-  height: 30px;
+  text-align: left;
 }
 .feature-grids {
   margin-top: 2em;
