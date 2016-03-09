@@ -28,6 +28,10 @@ margin:0;
 padding:0;
 }
 /*----*/
+.container.demo {
+  color: white;
+  font-size: 20px;
+}
 .banner{
 	background:url(../images/bg.jpg) no-repeat;
   background-color: #6D2B6B;
