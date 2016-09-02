@@ -65,18 +65,18 @@
 						classie.toggle( showRightPush, 'disabled' );
 					}
 				}
-				// jQuery( document ).ready(function($) {
-    // 				$('#bgvid').click(function() {
-    //     			this.paused ? this.play() : this.pause();
-    // 				});
-				// });
+				jQuery( document ).ready(function($) {
+    				$('#bgvid').click(function() {
+        			this.paused ? this.play() : this.pause();
+    				});
+				});
 			 </script>
 	     </div>
 			<div class="clearfix"></div>
 		 </div>
 
 		  <%= video_tag "promo.mp4", controls: false, autoplay:
-			true, muted: false, loop: true, id: "bgvid", type: "video/mp4"%>
+			true, muted: false, loop: true, id: "bgvid", type: "video/mp4", poster: "poster.png"%>
 			<div class="down">
 		 		<a class="scroll" href="#feature"><%= image_tag "scroll.png" %></a>
 			 </div>
