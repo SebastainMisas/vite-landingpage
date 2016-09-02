@@ -65,28 +65,34 @@
 						classie.toggle( showRightPush, 'disabled' );
 					}
 				}
+				jQuery( document ).ready(function($) {
+    				$('#bgvid').click(function() {
+        			this.paused ? this.play() : this.pause();
+    				});
+				});
 			 </script>
 	     </div>
 			<div class="clearfix"></div>
 		 </div>
-		 <div class= "video-wrapper">
-		 		<iframe src="//player.vimeo.com/video/181123532?autoplay=0" frameborder="0" allowfullscreen></iframe>
-		 </div>
+
+		  <%= video_tag "promo.mp4", controls: false, autoplay:
+			true, muted: false, loop: true, id: "bgvid", type: "video/mp4"%>
+			<div class="down">
+		 		<a class="scroll" href="#feature"><%= image_tag "scroll.png" %></a>
+			 </div>
+	</div>
+</div>
+<div class="banner2">
+
 		 <div class="banner-info">
 		 
 			 <h1>INVITE YOURSELF</h1>
 			 <p>Vite is the ultimate exclusive experience for local events. see what's going on nearby and check out all of the events happening around you.</p>
 			 <a href="https://itunes.apple.com/us/app/vite-exclusive-events/id1087246453?mt=8">
-			 	<div class="text-center" style="width:115px;color:#fff;">BETA TESTING</div>
+			 	<div class="text-center" style="color:#fff;">BETA TESTING</div>
 			 	<%= image_tag "app.png" %></a><br><br><br>
 		 </div>
-		 <div class="down">
-		 <a class="scroll" href="#feature"><%= image_tag "scroll.png" %></a>
-		 </div>
-	 </div>
-	 <div class="hand">
-		 <%= image_tag "hand.png" %>
-	 </div>
+
 </div>
 <!--features-->
 <div id="feature" class="features">
@@ -121,56 +127,6 @@
 	</div>
 </div>
 
-<!--screenshots-->
-<!-- <div id="screenshots" class="screen-shots">
-	 <div class="container">
-		 <h3>SCREEN SHOTS</h3>
-		  <div class="review-slider">
-			 <ul id="flexiselDemo1">
-				<! <li><%= image_tag "ss1" %></li> -->
-<!-- 				<li><%= image_tag "ss2" %></li> -->
-<!-- 				<li><%= image_tag "ss3" %></li> -->
-<!-- 				<li><%= image_tag "ss4" %></li> -->
-<!-- 				<li><%= image_tag "ss5" %></li> -->
-<!-- 				<li><%= image_tag "ss6" %></li> -->
-<!-- 				<li><%= image_tag "ss7" %></li> -->
-				<!-- <li><%= image_tag "ss8" %></li> -->
-<!-- 				<li><%= image_tag "ss9" %></li> -->
-<!-- 				<li><%= image_tag "ss10" %></li> -->
-				<!-- <li><%= image_tag "ss11" %></li> -->
-<!-- 				<li><%= image_tag "ss12" %></li>			
-			 </ul> -->
-				<!--  <script type="text/javascript">
-			 // $(window).load(function() {
-				
-			 //  $("#flexiselDemo1").flexisel({
-				// 	visibleItems: 4,
-				// 	animationSpeed: 1000,
-				// 	autoPlay: true,
-				// 	autoPlaySpeed: 3000,    		
-				// 	pauseOnHover: true,
-				// 	enableResponsiveBreakpoints: true,
-				// 	responsiveBreakpoints: { 
-				// 		portrait: { 
-				// 			changePoint:480,
-				// 			visibleItems: 2
-				// 		}, 
-				// 		landscape: { 
-				// 			changePoint:640,
-				// 			visibleItems: 3
-				// 		},
-				// 		tablet: { 
-				// 			changePoint:768,
-				// 			visibleItems: 4
-				// 		}
-				// 	}
-				// });
-				// });
-			 // </script>
-			 <! // <script type="text/javascript" src="assets/jquery.flexisel.js"></script> -->	
-<!-- 		  </div>
- -->	<!--   </div> -->
-<!-- </div> -->
 <div class="Contact">
 	 <div class="container">
 		 <h3>Contact us</h3>
