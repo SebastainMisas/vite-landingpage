@@ -36,7 +36,7 @@
 			 <div class="top-nav">
 				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 					<h3>Menu</h3>
-					<a class="scroll" href="#home" class="active">Home</a>
+					<a class="scroll" href="#home" class="active" class="homeBtn">Home</a>
 					<a class="scroll" href="#feature">Features</a>
 					<!-- <a class="scroll" href="#screenshots">Screen Shots</a>
 					<a class="scroll" href="#team">Team</a> -->
@@ -59,7 +59,12 @@
 					classie.toggle( menuRight, 'cbp-spmenu-open' );
 					disableOther( 'showRightPush' );
 				};
-
+				homeBtn.onclick = function() {
+					// classie.toggle( this, 'active' );
+					// classie.toggle( body, 'cbp-spmenu-push-toleft' );
+					// classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRightPush' );
+				};
 				function disableOther( button ) {
 					if( button !== 'showRightPush' ) {
 						classie.toggle( showRightPush, 'disabled' );
@@ -84,10 +89,9 @@
 
 		 <div class="banner-info">
 		 
-			 <h1>INVITE YOURSELF</h1>
+			 <h1>GET INVITED!</h1>
 			 <p>Vite is the ultimate exclusive experience for local events. see what's going on nearby and check out all of the events happening around you.</p>
 			 <a href="https://itunes.apple.com/us/app/vite-exclusive-events/id1087246453?mt=8">
-			 	<div class="text-center" style="color:#fff;">BETA TESTING</div>
 			 	<%= image_tag "app.png" %></a><br><br><br>
 		 </div>
 
